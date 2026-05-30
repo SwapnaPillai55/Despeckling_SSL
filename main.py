@@ -16,9 +16,8 @@ PATCH_SIZE, EPS = 64, 1e-6
 DIM, DEPTH = 96, 2
 
 TRAIN_DIR = "./data/KLSG_train"
-TEST_DIR  = "/home/dinesh/swapna/AE_Den/AE_Den/data/test/KLSG_test_sets/noisy_test_dataset"
-#TEST_DIR  = "/home/dinesh/swapna/AE_Den/AE_Den/data/SASSED"
-BASE_OUT_DIR = Path("./Github_check") 
+TEST_DIR  = "./data/test/KLSG_test_sets"
+BASE_OUT_DIR = Path("./output") 
 
 def set_seed(seed):
     random.seed(seed); np.random.seed(seed); torch.manual_seed(seed)
